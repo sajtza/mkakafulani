@@ -25,54 +25,67 @@
  border-bottom: 2px solid rgb(204, 159, 11)
 }
 
+.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+  font-size: 16px !important;
+}
 .value:hover{
      cursor: pointer;
     margin: 1px solid rgb(221, 145, 4);
 }
+@media(max-width:768px){
+    .avartar{
+    width:30%;
+    }
+
+    .highlights{
+        padding-bottom: 2px;
+     border-bottom: 2px solid rgb(204, 159, 11)
+    }
+}
 
     </style>
+
+
 </head>
 <body>
+    <script>
+        $('document').ready(function(){
+         $('body').click(function(event){
+             if($(".navbar-collapse").is(":visible")&&$(".navbar-toggler".is(":visible")){
+                 $(".navbar-collapse").collapse("toggle");
+             }
+         });
+        });
+     </script>
+
     <!-- navbar -->
-<nav class="navbar navbar-expand-lg  fixed-top" style="background-color: black;" >
-    <div class="container ">
+<nav class="navbar navbar-expand-lg " style="background-color: black;" >
+    <div class="container  d-flex justify-content-between align-items-center">
       <a class="navbar-brand logo h2 align-self-center" href="index.html">
        <img src="assets/img/icon.jpg" alt="" width="50" height="45" srcset="">
     </a>
     <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-    data-bs-target="#navmenu">
+    data-bs-target="#templatemo_main_nav">
 <span class=" bi bi-list h1 text-light"></span></button>
-    <div class="collapse navbar-collapse" id="navmenu">
-        
-
-        <ul class="navbar-nav ms-auto ">
-
-            
-
-            <li class="nav-item">
-
-         <a href="#shop" class="nav-link text-light"
-         >Shop</a>
-     </li>
-
-     <li class="nav-item">
-        <a href="#aboutus" class="nav-link text-light">
-        About us
-        </a>
-    </li>
-
-        <li class="nav-item" >
-            <a href="#contacts" class="nav-link text-light"
-                    >Contacts</a>
-        </li>
-        <li class="nav-item">
-            <a href="#faq" class="nav-link text-light"
-            >FAQs</a>
-        </li>
-    </ul>
+<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+    <div class="flex-fill">
+         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+            <div class="flex-fill">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#aboutus">About Us</a>
+                    </li>
+                       <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
    </div>
    </div>
-
+</div>
 </nav>
 
 
@@ -98,7 +111,7 @@
                   </div>
                   <div class="col-lg-6 mb-0 d-flex align-items-center">
                       <div class="text-align-left">
-                          <h2 class="h2"><span class="highlights">MkakaFu</span>lani Shop</h2>
+                          <h1 class="h1"><span class="highlights">MkakaFu</span>lani</h1>
                           <h3 class="h3"><i>The best outfits' seller and supplier</i></h3>
                           <p class="lh-lg">
                             Dear customer, you are warmly welcome to <strong class="fw-bolder">MkakaFulani Shop</strong> is a </span> strong business venture 
@@ -117,10 +130,10 @@
                   </div>
                   <div class="col-lg-6 mb-0 d-flex align-items-center">
                     <div class="text-align-left">
-                      <h2 class="h2"><span class="highlights">MkakaFu</span>lani Shop</h2>
+                      <h1 class="h1"><span class="highlights">MkakaFu</span>lani</h1>
                       <h3 class="h3"><i>The best outfits' seller and supplier</i></h3>
                       <p class="lh-lg">
-                        Dear customer, you are warmly welcome to <strong class="fw-bolder">MkakaFulani Shop</strong> is a </span> strong business venture 
+                        Dear customer, Once you will purchase our products  <strong class="fw-bolder">in large quant</strong> is a </span> strong business venture 
                         deals with selling and supplying the modern outfits (Shirts, T-shirts, and Cap) of any size having
                         the logo named MkakaFulani or MdadaFulani.</p>
                   </div>
@@ -137,7 +150,7 @@
                 </div>
                 <div class="col-lg-6 mb-0 d-flex align-items-center">
                   <div class="text-align-left">
-                    <h2 class="h2"><span class="highlights">MkakaFu</span>lani Shop</h2>
+                    <h1 class="h1"><span class="highlights">MkakaFu</span>lani</h1>
                     <h3 class="h3"><i>The best outfits' seller and supplier</i></h3>
                     <p class="lh-lg">
                       Dear customer, you are warmly welcome to <strong class="fw-bolder">MkakaFulani Shop</strong> is a </span> strong business venture 
@@ -171,7 +184,7 @@
     <!-- Start Content -->
     <section id="shop">
     <div class="container py-5">
-      <h2 class="h2 pb-3 fw-bolder text-center pt-3"> <span class="highlights">Our s</span>hop</h2>
+      <h1 class="h1 pb-3 fw-bolder text-center pt-3"> <span class="highlights">Our s</span>hop</h1>
                   <div class="row">
                   <div class="col-md-4">
                       <div class="card mb-4 product-wap rounded-0">
@@ -291,7 +304,7 @@
                 <div class="col-md-4">
                     <div class="card mb-4 product-wap rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/dadaq.png">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/dadaz.png">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="bi bi-heart"></i></a></li>
@@ -325,6 +338,90 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+                <div class="col-md-4">
+                    <div class="card mb-4 product-wap rounded-0">
+                        <div class="card rounded-0">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/dada10.png">
+                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i class="bi bi-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="bi bi-eye"></i></a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h3 text-decoration-none">T-shirt for females</a>
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <li>M/L/X/XL</li>
+                                <li class="pt-2">
+                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                <li>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-muted bi bi-star"></i>
+                                </li>
+                            </ul>
+                            <p class="text-center mb-0">Tshs 20,000</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="col-md-4">
+                    <div class="card mb-4 product-wap rounded-0">
+                        <div class="card rounded-0">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/dada11.png">
+                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i class="bi bi-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="bi bi-eye"></i></a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h3 text-decoration-none">T-shirt for females</a>
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <li>M/L/X/XL</li>
+                                <li class="pt-2">
+                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                <li>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-muted bi bi-star"></i>
+                                </li>
+                            </ul>
+                            <p class="text-center mb-0">Tshs 20,000</p>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <div class="col-md-4">
                     <div class="card mb-4 product-wap rounded-0">
@@ -363,6 +460,50 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+                <div class="col-md-4">
+                    <div class="card mb-4 product-wap rounded-0">
+                        <div class="card rounded-0">
+                            <img class="card-img rounded-0 img-fluid" src="assets/img/new.png">
+                            <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li><a class="btn btn-success text-white" href="shop-single.html"><i class="bi bi-heart"></i></a></li>
+                                    <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="bi bi-eye"></i></a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="shop-single.html" class="h3 text-decoration-none">T-shirt for males</a>
+                            <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                <li>M/L/X/XL</li>
+                                <li class="pt-2">
+                                    <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                    <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                <li>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-warning bi bi-star"></i>
+                                    <i class="text-muted bi bi-star"></i>
+                                </li>
+                            </ul>
+                            <p class="text-center mb-0">Tshs 20,000</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
 
                 <div class="col-md-4">
                     <div class="card mb-4 product-wap rounded-0">
@@ -408,39 +549,39 @@
   <!-- End Content -->
 
 <!-- ABOUT US -->
-<section id="aboutus" class=" text-center mt-5 my-1">
-    <div class="container">
-        <h2 class="h2 text-da  pb-3 fw-bolder pt-3"> <span class="highlights">About </span>Us</h2>
-        <div class="card mb-3 bg-dark text-light card-change">
-            <div class="card-body value">
+<section id="aboutus" class="  text-center mt-5 my-1">
+    <div class="container bg-light ">
+        <h1 class="h1 text-da  pb-3 fw-bolder pt-3"> <span class="highlights">About </span>Us</h1>
+        <div class="card mb-3 card-change">
+            <div class="card-body value bg-light ">
        <p class="value">Mkakafulani is a Tanzanian brand dealing with the supply and distribution of 
     clothes for adults, teenager and children . It's started since 2021 under , MkakaFulani Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sint nulla, nam itaque ipsa maiores ad sed eum nobis doloribus id exercitationem eligendi velit laudantium quis tempora quos. Harum, rem!
 </p>
 </div>
 </div>
    
-<h3 class="text-center h3 my-3 " >Our values</h3>
+<h2 class="text-center h2 my-3 bg-light  " >Our values</h3>
         <div class="row">
       <div class="col-md-4">
-        <div class="card mb-3 bg-dark text-light card-change">
+        <div class="card  bg-light mb-3 card-change">
                 <div class="card-body value">
-                  <i class="bi bi-person-plus pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
-                  <h5 class="card-title lead">customer satisfaction</h5>
+                  <i class="bi bi-hand-thumbs-up pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
+                  <h5 class="card-title lead">Customer satisfaction</h5>
                   <p class="card-text">
-           when a customer dare to purchase a product 
+           When a customer dare to purchase a product 
            from us, we ensure he become satified first.
                   </p>
               </div>
             </div> 
     </div>
         <div class="col-md-4">
-            <div class="card mb-3 bg-dark text-light card-change">
-                    <div class="card-body value">
-                      <i class="bi bi-clock pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
+            <div class="card mb-3 bg-light card-change">
+                    <div class="card-body  value">
+                      <i class="bi bi-star pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
                       <h5 class="card-title lead">Affordability</h5>
                       <p class="card-text">
-We unsure that the products the products from mkakafulani are 
-of affordable price in which any ordinary customer can afford to buy.
+We ensure that the price of products from our shop are being sold in
+the affordable price in which any ordinary customer can afford to buy.
                       </p>
       
                   </div>
@@ -448,14 +589,14 @@ of affordable price in which any ordinary customer can afford to buy.
              </div>
 
             <div class="col-md-4">
-             <div class="card mb-3 bg-dark text-light card-change">
+             <div class="card mb-3 bg-light  card-change">
                      <div class="card-body value">
-                       <i class="bi bi-clock pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
-                       <h5 class="card-title lead">In-time derivery</h5>
+                       <i class="bi bi-cart-check-fill pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
+                       <h5 class="card-title lead">On-time derivery</h5>
                        <p class="card-text">
- we ensure that a customer deliver a products in-time 
- particularly to those costomer living far from our
- office location
+The product that purchased from our shop, we ensure that 
+they have been delivered to the intended customer before the 
+agreed time.
                        </p>
        
                    </div>
@@ -463,12 +604,12 @@ of affordable price in which any ordinary customer can afford to buy.
               </div>
 
               <div class="col-md-4">
-                <div class="card mb-3 bg-dark text-light card-change">
+                <div class="card mb-3 bg-light  card-change">
                         <div class="card-body value">
-                          <i class="bi bi-clock pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
+                          <i class="bi bi-suit-heart-fill pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
                           <h5 class="card-title lead">Strong customer support</h5>
                           <p class="card-text">
-    we ensure that a customer deliver a products in-time 
+    We ensure that a customer deliver a products in-time 
     particularly to those costomer living far from our
     office location
                           </p>
@@ -478,10 +619,10 @@ of affordable price in which any ordinary customer can afford to buy.
                  </div>
 
                  <div class="col-md-4">
-                    <div class="card mb-3 bg-dark text-light card-change">
+                    <div class="card bg-light  mb-3 card-change">
                             <div class="card-body value">
-                              <i class="bi bi-clock pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
-                              <h5 class="card-title lead">Strong customer support</h5>
+                              <i class="bi bi-person-plus pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
+                              <h5 class="card-title lead"></h5>
                               <p class="card-text">
         we ensure that a customer deliver a products in-time 
         particularly to those costomer living far from our
@@ -492,7 +633,7 @@ of affordable price in which any ordinary customer can afford to buy.
                         </div>
                      </div>
                      <div class="col-md-4">
-                        <div class="card mb-3 bg-dark text-light card-change">
+                        <div class="card bg-light  mb-3 card-change">
                                 <div class="card-body value">
                                   <i class="bi bi-clock pb-2" style="font-size:60px; color:rgb(204, 159, 11)"></i>
                                   <h5 class="card-title lead">Strong customer support</h5>
@@ -514,43 +655,58 @@ of affordable price in which any ordinary customer can afford to buy.
 </section>
 
 
-<section id="contacts" class="mt-5 ">
-<h2 class="py-3 text-center"><span class="highlights">Conta</span>cts</h2>
+<section id="contact" class="mt-5 mb-3">
+<h1 class="py-3 h1 text-center"><span class="highlights">Conta</span>ct US</h1>
     <div class="container">
         <div class="row ">
-            <div class="card-body col-md-6 pb-3">
-                <h3 class="card-title h3 my-3">Leave your comment below</h3>
-                <div class="mb-3">
-Email Address:
-                    <input type="email" name="email" id="email" class="form-control">
-                </div>
+           
+       <div class="col-md-6  pt-5">
+                <h1 class="h2 border-bottom pb-3">Our location</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d981.7987052516398!2d34.83418115350606!3d-8.847279113755109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18fff336499e42e3%3A0x53faaa69aa325788!2sMjimwema!5e0!3m2!1ssw!2stz!4v1683422207317!5m2!1ssw!2stz" width="100%" height="75%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
 
-                <div class="mb-3">
-                  Firstname
-                    <input type="text" name="firstname" id="firstname" class="form-control">
-                </div>
 
-                <div class="mb-3">
-                    Lastname:
-                   <input type="text" name="lastname" id="lastname" class="form-control">
-                </div>
-<div class="mb-3">
-    Comment:
-    <textarea name="comment" id="comment" class='form-control' cols="20" rows="10"></textarea>
-</div>
-             </form>
-            </div>
-            <div class="card-body col-md-6 pb-3">
-                <h3 class="card-title h3 my-3">Our location</h3>   
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31884.05588871822!2d31.3312859!3d-2.6638271!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2stz!4v1679116517621!5m2!1sen!2stz" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
+                   <div class="col-md-6 pt-5">
+                    <h2 class="h2 border-bottom pb-3" >Get in touch with us</h2>
+                    <ul class="list-unstyled footer-link-list">
+                        <li class="mb-4">
+                         <li class="mb-4">
+                            <i class="bi bi-phone " style="color:rgb(204, 127, 11)"></i>
+                            <a class="text-decoration-none text-dark"  href="tel:255-712-126-214">+255 712 126 214</a>
+                        </li>
+                        <li class="mb-4">
+                            <i class="bi bi-envelope fa-fw" style="color:rgb(204, 127, 11)"></i>
+                            <a class="text-decoration-none text-dark" href="mailto:mkakafulani05@gmail.com">mkakafulani05@gmail.com</a>
+                        </li>
+                        <li class="mb-4">
+                          <i class="bi bi-whatsapp bi-fw" style="color:rgb(204, 127, 11)"></i>
+                          +255 712 126 214
+                      </li>
+                      <li class="mb-4">
+                          <i class="bi bi-instagram bi-fw" style="color:rgb(204, 127, 11)"></i>
+                          <a href="https://instagram.com/mkakafulani" class="text-decoration-none text-dark"> mkakafulani</a>
+                      </li>
+    
+                      <li class="mb-4">
+                          <i class="bi bi-twitter bi-fw" style="color:rgb(204, 127, 11)"></i>
+                          <a href="https://twitter.com/mkakafulani" class="text-decoration-none text-dark">mkakafulani</a>
+                      </li>
+    
+                      <li class="mb-4">
+                        <i class="bi bi-facebook bi-fw" style="color:rgb(204, 127, 11)"></i>
+                        <a href="https://facebook.com/mkakafulani" class="text-decoration-none text-dark">mkakafulani</a>
+                    </li>
+                    </ul>
+                    </div>
+
+
+
     </div>
 </section>
 
 
     <!-- FAQ -->
-    <section id="faq" class="my-5">
+    <!-- <section id="faq" class="my-5">
         <div class="container">
           <h4 class="fw-bolder text-center py-4"> <span class="highlights">Frequentl</span>y Asked Questions</h4>
             <div class="accordion" id="accordionExample">
@@ -597,7 +753,7 @@ Email Address:
                 </div>
               </div>
         </div>
-    </section>
+    </section> -->
 
 <!-- Modal for getting touch with me -->
 <div class="modal fade" id="notifyme" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -638,40 +794,9 @@ Email Address:
       <div class="container">
           <div class="row">
 
-              <div class="col-md-4 pt-5">
-                  <h2 class="h2 border-bottom pb-3 border-light text-light" >Mkakafulani Shop</h2>
-                  <ul class="list-unstyled text-light footer-link-list">
-                      <li>
-                          <i class="bi bi-map-alt bi-fw" style="color:rgb(204, 127, 11)"></i>
-                          59119 Mjimwema - Makambako 
-                      </li>
-                      <li>
-                          <i class="bi bi-phone " style="color:rgb(204, 127, 11)"></i>
-                          <a class="text-decoration-none"  href="tel:255-712-126-214">+255 712 126 214</a>
-                      </li>
-                      <li>
-                          <i class="bi bi-envelope fa-fw" style="color:rgb(204, 127, 11)"></i>
-                          <a class="text-decoration-none" href="mailto:mkakafulani05@gmail.com">mkakafulani05@gmail.com</a>
-                      </li>
-                      <li>
-                        <i class="bi bi-whatsapp bi-fw" style="color:rgb(204, 127, 11)"></i>
-                        +255 712 126 214
-                    </li>
-                    <li>
-                        <i class="bi bi-instagram bi-fw" style="color:rgb(204, 127, 11)"></i>
-                        <a href="https://instagram.com/mkakafulani" class="text-decoration-none">@mkakafulani</a>
-                    </li>
+              
 
-                    <li>
-                        <i class="bi bi-twitter bi-fw" style="color:rgb(204, 127, 11)"></i>
-                        <a href="https://twitter.com/mkakafulani" class="text-decoration-none">@mkakafulani</a>
-                    </li>
-
-                  </ul>
-                  </div>
-      
-
-              <div class="col-md-4 pt-5">
+              <div class="col-md-6 pt-5">
                   <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
                   <ul class="list-unstyled text-light footer-link-list">
                       <li><a class="text-decoration-none" href="#">Luxury</a></li>
@@ -682,14 +807,13 @@ Email Address:
                   </ul>
               </div>
 
-              <div class="col-md-4 pt-5">
+              <div class="col-md-6 pt-5">
                   <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                   <ul class="list-unstyled text-light footer-link-list">
                       <li><a class="text-decoration-none" href="#">Home</a></li>
                       <li><a class="text-decoration-none" href="#aboutus">About Us</a></li>
                       <li><a class="text-decoration-none" href="#shop">Shop</a></li>
-                      <li><a class="text-decoration-none" href="#faqs">FAQs</a></li>
-                      
+                    
                   </ul>
               </div>
 
@@ -700,15 +824,15 @@ Email Address:
       <div class="w-100 bg-black py-2">
           <div class="container">
               <div class="row pt-2">
-                  <div class="col-8">
+                  <div class="col-9">
                       <p class="text-left text-light">
-                          Copyright &copy; 2023 <span style=" color:rgb(204, 159, 11);"> Mkakafulani</span>
-                          | Designed by <a  href="https:/sajtza.github.io/jerome"  class="text-decoration-none">JeromeTech</a>
+                          Copyrights &copy; 2023 <span style=" color:rgb(204, 159, 11);"> Mkakafulani</span>
+                          |
                       </p>
-                 
-                 <div class="col-4">
-                  <a href="#" class="position-absolute bottom-0 end-0 p-4 h1" style=" color:rgb(204, 127, 11)">
-                    <i class="bi bi-arrow-up-circle border border-light rounded-circle text-center"></i>
+                 </div>
+                 <div class="col-3">
+                  <a href="#" class="position-absolute bottom-0 end-0 p-4" style=" color:rgb(204, 127, 11);">
+                    <i style="font-size: 45px;" class="bi bi-arrow-up-circle rounded-circle "></i>
                 </a>
                 </div>
               </div>
